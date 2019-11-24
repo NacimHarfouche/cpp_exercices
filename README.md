@@ -1,2 +1,2 @@
 # cpp_exercices
-Some c++ exercices done
+Some C++ exercices done
