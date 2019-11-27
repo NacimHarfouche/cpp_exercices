@@ -13,18 +13,19 @@
 #include <vector>
 
 int main() {
-  std::vector<double> listNum = {2, 4, 3, 6, 1, 9};
+  std::vector<int> listNum = {2, 4, 3, 6, 1, 9};
+
   int sumEvenNumbers = 0;
-  int productOddNumbers = 0;
+  int sumOddNumbers = 1;
   
-  for (int i = 0; i <= listNum.size() - 1; i++) {
-    if ((listNum[i] % 2) == 0) {
+  for (int i = 0; i < listNum.size(); i++) {
+    if (listNum[i] % 2 == 0) {
       sumEvenNumbers += listNum[i];
     } else {
-      
+      sumOddNumbers *= listNum[i];
     }
   }
 
-  std::cout << sumEvenNumbers << "\n";
-  std::cout << productOddNumbers << "\n";
+  std::cout << "Sum of Even : " << sumEvenNumbers << "\n";
+  std::cout << "Product of odd : " << sumOddNumbers << "\n";
 }
